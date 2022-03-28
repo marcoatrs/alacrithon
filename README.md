@@ -1,0 +1,4 @@
+# Alacrithon
+
+
+Alacritty Python CLI
