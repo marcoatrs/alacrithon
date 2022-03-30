@@ -49,8 +49,7 @@ def get_default_config(system: str) -> dict:
         },
         "cursor": {
             "style": {
-                "shape": "Underline",
-                "blinking": "on"
+                "shape": "Underline"
             }
         },
         "working_directory": str(wd_path)

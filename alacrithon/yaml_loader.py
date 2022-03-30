@@ -10,4 +10,4 @@ def load_yaml(yaml_path: Path) -> dict:
 
 def save_yaml(yaml_path: Path, yaml_dict: dict) -> None:
     with open(yaml_path, 'w') as yaml_file:
-        yaml.dump(yaml_dict, yaml_file)
+        yaml.dump(yaml_dict, yaml_file, sort_keys=False)
