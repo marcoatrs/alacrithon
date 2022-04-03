@@ -13,7 +13,7 @@ Alacritty Python CLI
 
 [ ] Cursor
 
-[ ] Padding
+[O] Padding
 
 [ ] Open templates folder (os.startfile(path))
 
@@ -25,3 +25,5 @@ Alacritty Python CLI
 -t --theme
 
 -f --font
+
+-p --padding

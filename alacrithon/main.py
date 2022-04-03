@@ -2,6 +2,7 @@ import alacritty_path as ap
 import change_theme
 import cli
 import font
+import padding
 import yaml_loader
 
 if __name__ == '__main__':
@@ -19,5 +20,7 @@ if __name__ == '__main__':
         change_theme.charge_theme_config(args.theme, ala_config)
     if args.font is not None:
         font.change_font(args.font, ala_config)
+    if args.padding is not None:
+        padding.change_padding(args.padding, ala_config)
 
     yaml_loader.save_yaml(yaml_path, ala_config)
