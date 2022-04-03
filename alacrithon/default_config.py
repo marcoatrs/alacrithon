@@ -44,12 +44,13 @@ def get_default_config(system: str) -> dict:
         "draw_bold_text_with_bright_colors": True,
         "live_config_reload": True,
         "scrolling": {
-            "history": 5000,
+            "history": 2000,
             "multiplier": 10
         },
         "cursor": {
             "style": {
-                "shape": "Underline"
+                "shape": "Underline",
+                "blinking": "on"
             }
         },
         "working_directory": str(wd_path)

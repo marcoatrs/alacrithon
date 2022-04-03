@@ -1,11 +1,12 @@
+import alacritty_path as ap
 import change_theme
 import cli
+import font
 import yaml_loader
-from alacritty_path import get_alacritty_path
 
 if __name__ == '__main__':
 
-    yaml_path = get_alacritty_path()
+    yaml_path = ap.get_alacritty_path()
     ala_config = yaml_loader.load_yaml(yaml_path)
 
     args = cli.get_cli_args()
@@ -16,5 +17,7 @@ if __name__ == '__main__':
         ala_config['font']['size'] = args.size
     if args.theme is not None:
         change_theme.charge_theme_config(args.theme, ala_config)
+    if args.font is not None:
+        font.change_font(args.font, ala_config)
 
     yaml_loader.save_yaml(yaml_path, ala_config)
